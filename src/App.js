@@ -1,43 +1,35 @@
-
-// import Home from './components/home';
-// import HomeMobile from './components/homemobile';
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Home />
-//       <HomeMobile />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+// import router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
+// import pages
+import Nav from './components/nav';
 import Home from './components/home';
-import HomeMobile from './components/homemobile';
+import Werkwijze from './components/Werkwijze';
+import Informatie from './components/Informatie';
+import Diensten from './components/Diensten';
+import Voorwaarden from './components/Voorwaarden';
+import Contact from './components/Contact';
+// import Footer from './components/footer';
 
-function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+const App = () => {
   return (
-    <div className="App">
-      {isMobile ? <HomeMobile /> : <Home />}
-    </div>
+    <>
+    <Router>
+      <Nav />
+      <ScrollToTop />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/Werkwijze' element={<Werkwijze />}/>
+        <Route path='/informatie' element={<Informatie />}/>
+        <Route path='/diensten' element={<Diensten />}/>
+        <Route path='/voorwaarden' element={<Voorwaarden />}/>
+        <Route path='/contact' element={<Contact />}/>
+      </Routes>
+      {/* <Footer /> */}
+    </Router>
+    </>
   );
-}
+};
 
 export default App;
