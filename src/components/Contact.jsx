@@ -4,7 +4,7 @@ const Contact = () => {
   return (
   <section>
 {/* HERO */}
-<section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-center items-center tracking-widest">
+<section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
   {/* text */}
     <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">contact</div>
   {/* image */}
@@ -24,8 +24,8 @@ const Contact = () => {
     {/* form section*/}
     <div className="flex flex-col lg:flex-row">
     {/* contact gegevens */}
-    <div className="flex justify-center items-center order-last lg:order-first lg:w-1/2 tracking-wider">
-      <p>
+    <div className="flex justify-center items-center order-last lg:order-first lg:w-1/2 tracking-wider pt-10 lg:pt-0">
+      <p className="p-5 rounded-xl shadow-lg">
       Evi@schutzorgondersteuning <br />
       06 15 13 86 81 <br />
       <br />
@@ -35,8 +35,9 @@ const Contact = () => {
     </div>
 
     {/* verzend formulier */}
-    <div className="order-first lg:order last flex flex-col lg:w-1/2 pb-20 lg:pb-0">
-      <h1 className="text-[35px] lg:text-[50px] pb-20 lg:pb-0 uppercase font-bold tracking-widest text-center lg:text-left">
+    <div className="order-first lg:order last flex flex-col lg:w-2/5 pb-10 lg:pb-5
+    rounded-xl shadow-lg bg-secondary p-5 py-10">
+      <h1 className="text-[35px] lg:text-[40px] pb-20 lg:pb-10 uppercase font-bold tracking-widest text-center">
         Contract <br />formulier
       </h1>
        {/* form */}
@@ -49,7 +50,7 @@ const Contact = () => {
               className="outline=none border-b
               border-b-brown h-[60px] bg-transparent
                font-light w-full pl-3
-               placeholder:text-brown text-black"
+               placeholder:text-black text-black tracking-widest"
               type="text"
               name="name"
               placeholder='Naam'/>
@@ -57,7 +58,7 @@ const Contact = () => {
                className="outline=none border-b
               border-b-brown h-[60px] bg-transparent
                font-light w-full pl-3
-               placeholder:text-brown text-black"
+               placeholder:text-black text-black tracking-widest"
               type="text"
               name="email"
               placeholder='Email address'
@@ -68,7 +69,7 @@ const Contact = () => {
             className="outline=none border-b
               border-b-brown h-[60px] bg-transparent
                font-light w-full pl-3
-               placeholder:text-brown text-black"
+               placeholder:text-black text-black tracking-widest"
               type="text"
               name="subject"
               placeholder='Onderwerp'
@@ -76,9 +77,9 @@ const Contact = () => {
               />
             <textarea
             className="outline=none border-b
-              border-b-brown h-[150px] bg-transparent
+              border-b-brown h-[100px] bg-transparent
                font-light w-full pl-3 text-black
-               placeholder:text-brown "
+               placeholder:text-black tracking-widest"
               type="text"
               name="message"
               placeholder='Typ hier uw bericht ...'
@@ -86,8 +87,8 @@ const Contact = () => {
               />
               <button
               type="submit" className='
-              py-[5px] px-[5px] h-[35px] w-[120px] flex items-center justify-center uppercase font-bold border-solid border-2 border-black tracking-widest bg-[#F1F1F1] text-black
-              mt-[30px] mx-auto
+              py-2 px-4  h-[35px] w-[120px] bg-[#f1f1f1] mx-auto my-5 flex justify-center items-center
+              hover:bg-white text-gray-800 font-semibold border border-gray-600 rounded-xl shadow
               '>
                 Verzend
               </button>

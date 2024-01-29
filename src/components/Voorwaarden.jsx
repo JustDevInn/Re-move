@@ -5,7 +5,7 @@ const Voorwaarden = () => {
   return (
   <section>
         {/* HERO */}
-<section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-center items-center tracking-widest">
+<section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
   {/* text */}
     <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">Voorwaar<br/>den</div>
   {/* image */}
@@ -14,12 +14,12 @@ const Voorwaarden = () => {
 
 {/* ALG VOORWAARDEN */}
 <section className="w-screen">
-  <div className="p-10 lg:p-20">
+  <div className="p-10 lg:p-20 tracking-widest">
     <h1 className="text-[35px] lg:text-[50px] pb-20 uppercase font-bold tracking-widest text-center">algemene voorwaarden</h1>
     {/* Art 1 */}
-    <div>
-      <h1 className="underline">Artikel 1. Definities</h1>
-      <p>
+    <div className="rounded-xl shadow-xl p-5 my-2">
+      <h1 className="underline font-bold text-xl uppercase">Artikel 1. Definities</h1>
+      <p className="font-light ">
         In deze algemene voorwaarden wordt verstaan onder:
         <br /><br />
         - Opdrachtnemer: RE-MOVE coaching die deze algemene voorwaarden gebruikt voor het aanbieden van diensten; <br />
@@ -29,10 +29,10 @@ const Voorwaarden = () => {
       </p>
     </div>
         {/* Art 2 */}
-      <div>
-      <h1 className="underline">Artikel 2. Toepasselijkheid van deze voorwaarden</h1>
+      <div className="rounded-xl shadow-xl bg-secondary p-5 my-2">
+      <h1 className="underline font-bold text-xl uppercase">Artikel 2. Toepasselijkheid van deze voorwaarden</h1>
       <br />
-      <p>
+      <p className="font-light ">
       - Deze voorwaarden gelden voor iedere aanbieding en iedere overeenkomst tussen RE-MOVE coaching en opdrachtgever waarop RE-MOVE coaching deze voorwaarden van toepassing heeft verklaard, voor zover van deze voorwaarden niet door partijen uitdrukkelijk en schriftelijk is afgewezen; <br />
       - De onderhavige voorwaarden zijn eveneens van toepassing op alle overeenkomsten met RE-MOVE coaching voor de uitvoering waarvan derder dienen te worden betrokken; <br />
       - Onrechtmatig bezwarende algemene voorwaarden van opdrachtgever worden nadrukkelijkniet erkend en worden afgewezen.
@@ -40,10 +40,10 @@ const Voorwaarden = () => {
       </p>
     </div>
         {/* Art 3 */}
-        <div>
-      <h1 className="underline">Artikel 3. Offertes en prijzen</h1>
+        <div className="rounded-xl shadow-xl p-5 my-2">
+      <h1 className="underline font-bold text-xl uppercase">Artikel 3. Offertes en prijzen</h1>
       <br />
-      <p>
+      <p className="font-light ">
       - De door RE-MOVE coaching gemaakte offertes en prijzen zijn vrijblijvend. RE-MOVE coaching begoudt zich het recht offertes en prijzen te wijzigen indien zij dit noodzakelijk acht; <br />
       - De prijzen in de genoemde offertes zijn exclusief BTW. Sommige diensten zijn btw-vrijgesteld. Dit wordt in de offerte aangegeven.<br />
       - Offertes zijn gebasseerd op de bij RE-MOVE coaching beschikbare informatie.
@@ -51,10 +51,10 @@ const Voorwaarden = () => {
       </p>
     </div>
       {/* Art 4 */}
-      <div>
-      <h1 className="underline">Artikel 4. Uitvoering van de overeenkomst</h1>
+      <div className="rounded-xl shadow-xl bg-secondary p-5 my-2">
+      <h1 className="underline font-bold text-xl uppercase">Artikel 4. Uitvoering van de overeenkomst</h1>
       <br />
-      <p>
+      <p className="font-light ">
       - RE-MOVE coaching zal de overeenkomst naar beste inzicht, vermogen en overeenkomstig de eisen van goed vakmanschap uitvoeren;<br />
       - Indien en voor zover een goede uitvoering van de overeenkomst dit vereist, heeft RE-MOVE coaching het recht bepaalde wekzaamheden te laten verrichten door derden;<br />
       - Re-MOVE coaching is niet aansprakelijk voor schade, van welke aard ook, doordat RE-MOVE coaching is uit gegevaan van door de opdrachtfever verstrekte onjuiste 
@@ -66,7 +66,7 @@ const Voorwaarden = () => {
 
 {/* VOLGENDE PAGINA */}
 <section className="w-screen">
-    <div className="w-full px-10 lg:px-20">
+    <div className="w-full p-10 lg:p-20">
         <h1 className="text-[30px] lg:text-[80px] uppercase font-bold text-right tracking-widest">volgende <br /><span className="text-secondary">pagina</span></h1>
         <div className="flex flex-row justify-end items-center pt-5">
         <p className="flex items-center justify-center text-right uppercase font-bold tracking-wider">Contact</p>
