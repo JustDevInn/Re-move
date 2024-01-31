@@ -21,7 +21,8 @@ const Diensten = () => {
 
   {/* Card 1*/}
     <div className="flex flex-col lg:flex-row justify-evenly p-5
-    rounded-xl shadow-lg bg-secondary">
+    rounded-xl shadow-lg bg-secondary
+    hover:scale-105 duration-300">
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">coachingssessies <br />individueel</h1>
@@ -40,7 +41,8 @@ const Diensten = () => {
 
 {/* Card 2*/}
 <div className="flex flex-col lg:flex-row justify-evenly p-5
-    rounded-xl shadow-lg bg-secondary">
+    rounded-xl shadow-lg bg-secondary
+    hover:scale-105 duration-300">
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">Workshop / <br />Clinics voor groepen</h1>
@@ -58,7 +60,8 @@ const Diensten = () => {
 
 {/* Card 3*/}
 <div className="flex flex-col lg:flex-row justify-evenly p-5
-    rounded-xl shadow-lg bg-secondary">
+    rounded-xl shadow-lg bg-secondary
+    hover:scale-105 duration-300">
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">Ouder-kind <br />interactie</h1>
@@ -76,7 +79,8 @@ const Diensten = () => {
 
     {/* Card 4*/}
 <div className="flex flex-col lg:flex-row justify-evenly p-5
-    rounded-xl shadow-xl shadow-gray-300 bg-secondary">
+    rounded-xl shadow-xl shadow-gray-300 bg-secondary
+    hover:scale-105 duration-300">
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">Hulp bij kind in <br />scheiding </h1>

@@ -30,7 +30,7 @@ const home = () => {
 
 
 {/* text area 2 */}
-<section className="w-screen">
+<section className="w-screen bg-red-200">
   <div className="flex flex-col justify-evenly lg:flex-row p-10 lg:p-20">
     {/* text */}
     <div className="lg:w-1/2">
