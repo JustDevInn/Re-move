@@ -16,7 +16,7 @@ module.exports = {
       backgroundImage: {
         'removelogo': "url('./img/greenicon.png')",
         'removeweb': "url('./img/removeweb.png')",
-        'removeLangweb': "url('./img/langwerpig-remove.png')",
+        'removeLangweb': "url('./img/removebg.png')",
         'removecouple': "url('./img/removecouple.png')",
       }
     },

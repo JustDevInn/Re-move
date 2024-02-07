@@ -1,10 +1,12 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+// linking
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
-
-const home = () => {
+const Home = () => {
   return (
-  <section className="md:h-screen w-screen">
+  <section id="toppage" className="w-screen">
   {/* Hero section*/}
 <div className="px-10 lg:px-20 flex flex-col md:flex-row justify-center items-center tracking-widest">
   {/* text */}
@@ -15,11 +17,11 @@ const home = () => {
 
 
 {/* text area 1*/}
-<section className="w-screen p-10 lg:px-20 flex justify-start">
-    <div className="tracking-wider w-full">
-        <h1 className="text-[30px] lg:text-[50px] font-bold tracking-widest text-left pb-5 lg:pb-0">
-            Wil <span className="text-secondary">jij</span> geholpen <br />worden <span className="text-secondary">?</span>
-        </h1>
+<section className="w-screen p-10 lg:px-20 flex">
+    <div className="tracking-wider w-full p-5 rounded-xl shadow-lg">
+      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10">
+        Wil <span className="text-secondary">jij</span> geholpen <br />worden <span className="text-secondary">?</span>
+      </h1>
         <h5 className="text-xl text-end">
             Ervaar jij wel eens <span className="text-secondary font-bold">onrust</span> en voel jij dit in je hele lichaam? <br />
             Word je soms te snel <span className="font-bold">boos</span> of <span className="font-bold">verdrietig</span>? Krijg jij wel eens <br /><span className="text-secondary font-bold">buikpijn</span>/<span className="font-bold">hoofdpijn</span> van <span className="font-bold">spanning</span>? Ben je <span className="text-secondary font-bold">onzeker</span> of denk <br />je snel dat je <span className="text-secondary font-bold">iets niet kan</span>?
@@ -30,8 +32,8 @@ const home = () => {
 
 
 {/* text area 2 */}
-<section className="w-screen bg-red-200">
-  <div className="flex flex-col justify-evenly lg:flex-row p-10 lg:p-20">
+<section className="w-screen p-10 lg:p-20bg-red-200">
+  <div className="flex flex-col justify-evenly lg:flex-row ">
     {/* text */}
     <div className="lg:w-1/2">
       <h5 className="text-xl tracking-widest">
@@ -42,8 +44,8 @@ const home = () => {
         Vind je het fijn om in beweging te zijn?
         En ben jij tussen de 8 en 21 jaar?
       </h5>
-      <h1 className="text-[30px] lg:text-[50px] font-bold
-        tracking-widest text-right lg:text-left pt-10 uppercase">
+      <h1 className="text-xl font-bold
+        tracking-widest text-right lg:text-left uppercase pt-5">
         Dan past <br /><span className="text-secondary lg:uppercase">Re-move </span>
         <span className="text-secondary">Coaching</span> bij jou!
         </h1>
@@ -58,11 +60,10 @@ const home = () => {
 <section className="w-screen">
 <div className="flex flex-col p-10 lg:p-20">
     {/* text */}
-        <h1 className="
-        text-[30px] lg:text-[50px]
-        font-bold tracking-widest text-center">
-        Ervaring waar je op <br />kan <span className="text-secondary">vertrouwen.</span>
-        </h1>
+    <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10 text-center
+    hover:scale-105 duration-300 rounded-xl shadow-xl">
+    Ervaring waar je op kan <span className="text-secondary">vertrouwen.</span>
+    </h1>
     </div>
 </section>
 
@@ -72,19 +73,19 @@ const home = () => {
 <div className="flex flex-col px-10 lg:px-20">
     {/* text */}
         <h5 className="text-xl
-        tracking-widest text-right">
-        <span className="font-bold">Sporten</span> is <span className="text-secondary">super goed</span> voor je mentale gezondheid! <br />
-        Als je sport maak je endorfine aan, het helpt  <span className="font-bold">tegen stress</span>, <span className="text-secondary">traint je brein</span>, <br />
-        leert je  <span className="font-bold">beter concentreren</span>, leert <span className="text-secondary">omgaan met teleurstellingen</span>,geeft je <br />
-        <span className="font-bold">zelfvertrouwen</span> een boost als iets lukt maar is ook een goede manier om  <span className="font-bold">emoties</span> <br />
-        te  <span className="font-bold">ontdekken</span> en hiermee te oefenen.
+        tracking-widest text-justify">
+        <span className="font-bold">Sporten</span> is super goed voor je mentale gezondheid! <br />
+        Als je sport maak je endorfine aan, het helpt  <span className="font-bold">tegen stress</span>, traint je brein,
+        leert je beter concentreren, leert <span className="text-secondary">omgaan met teleurstellingen</span>, geeft je 
+        <span className="font-bold">zelfvertrouwen</span> een boost als iets lukt maar is ook een goede manier om emoties
+        te ontdekkenen hiermee te oefenen.
         <span className="text-secondary"></span>
         </h5>
         <h1 className="py-5
         text-[20px] lg:text-[50px]
-        font-bold tracking-widest text-left">
-        Boxen is <span className="text-secondary">niet </span>
-        alleen een <br />sport
+        font-bold uppercase tracking-widest text-justify">
+        "Boxen is <span className="text-secondary">niet </span>
+        alleen een <br />sport"
         </h1>
         <p className="tracking-widest text-xl">
             Het is ook een geweldige manier om <span className="font-bold">sterker</span> in je schoenen te staan, met je <span className="text-secondary">emoties</span> om te gaan,
@@ -132,7 +133,9 @@ const home = () => {
     <div className="w-full p-10 lg:p-20">
         <h1 className="text-[30px] lg:text-[80px] uppercase font-bold text-right tracking-widest">volgende <br /><span className="text-secondary">pagina</span></h1>
         <div className="flex flex-row justify-end items-center pt-5">
-        <p className="flex items-center justify-center text-right uppercase font-bold tracking-wider">Informatie</p>
+        <Link to="/werkwijze#toppage" className="flex items-center justify-center text-right uppercase font-bold tracking-wider">
+        Werkwijze
+        </Link>
         <FaArrowRight className="text-secondary"/>
         </div>
     </div>
@@ -143,4 +146,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

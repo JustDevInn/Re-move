@@ -3,14 +3,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 // import pages
-import Nav from './components/nav';
-import Home from './components/home';
+import Nav from './components/Nav';
+import Home from './components/Home';
 import Werkwijze from './components/Werkwijze';
 import Informatie from './components/Informatie';
 import Diensten from './components/Diensten';
 import Voorwaarden from './components/Voorwaarden';
 import Contact from './components/Contact';
-// import Footer from './components/footer';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
         <Route path='/voorwaarden' element={<Voorwaarden />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
     </>
   );

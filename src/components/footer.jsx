@@ -1,36 +1,69 @@
-import React from "react";
+import React, { useState } from 'react';
+import { HiOutlineMail } from "react-icons/hi";
+import { FaPhone } from 'react-icons/fa';
+import { FaInstagram } from "react-icons/fa";
+import { TiClipboard } from "react-icons/ti";
 
-const footer = () => {
+
+const Footer = () => {
+
+    const [copied, setCopied] = useState(false);
+  
+    const phoneNumber = '0615138681';
+  
+    const handleCopyToClipboard = () => {
+      navigator.clipboard.writeText(phoneNumber);
+      setCopied(true);
+      // Reset copied state after 2 second
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    };
+
   return (
   <footer className="w-screen">
   <div className="w-full flex flex-col justify-center
   items-center md:px-20 px-10 font-primary font-medium">
 {/* logo */}
-    <div className="bg-removeLangweb h-[150px] md:h-[200px] w-full bg-center bg-contain bg-no-repeat"></div>
+    <div className="bg-removeLangweb h-[150px] md:h-[400px] w-full bg-center bg-contain bg-no-repeat"></div>
 {/* text */}
-    <div className="w-full flex justify-center items-center py-10 text-center">
-      <h5 className="text-xl tracking-wide font-light pb-8">Neem contact met ons op via een van de volgende opties.</h5>
+    <div className="w-full flex justify-center items-center pb-10 text-center">
+      <h5 className="text-xl tracking-widest font-thin pb-8">Neem contact met ons op via een van de volgende opties.</h5>
     </div>
 {/* contact gegevens */}
-    <div className="w-full flex justify-evenly items-center font-thin flex-col md:flex-row md:px-20">
-
+    <div className="w-full flex justify-evenly items-center font-thin flex-row md:px-20">
+    {/* EMAIL */}
         <div className="flex justify-start items-center flex-col pb-5">
-            <h4 className="text-xl tracking-widest uppercase pb-3 text-secondary">Email</h4>
-            <p className="text-sm font-light tracking-wide"><a href="mailto:evi@schutzorgondersteuning.nl">evi@schutzorgondersteuning.nl</a></p>
+            <a
+            className="text-xl tracking-widest uppercase pb-3 text-secondary"
+            href="mailto:evi@schutzorgondersteuning.nl">
+            <HiOutlineMail size={50} />
+            </a>
         </div>
-        <div className="flex justify-center items-center flex-col pb-5">
-            <h4 className="text-xl tracking-widest uppercase pb-3 text-secondary">Telefoon</h4>
-            <p className="text-sm font-light tracking-wide">0615138681</p>
-        </div>
+    {/* PHONE */}
+    <div className="flex justify-center items-center flex-col pb-5 relative">
+        {copied && (
+          <p className="text-orange-400 text-xs flex flex-row transition-opacity duration-300 tracking-wider absolute top-0 -mt-10">
+            Copied to clipboard! <TiClipboard className="text-lg ml-1" />
+          </p>
+        )}
+        <h4 className="text-xl tracking-widest uppercase pb-3 text-secondary">
+          <FaPhone
+            size={50}
+            onClick={handleCopyToClipboard}
+            className='cursor-pointer'
+          />
+        </h4>
+      </div>
+    {/* INSTAGRAM */}
         <div className="flex justify-start items-center flex-col pb-5">
-            <h4 className="text-xl tracking-widest uppercase pb-3 text-secondary">Social</h4>
             <a
             href="https://www.instagram.com/re_move_coaching"
             rel="noreferrer"
             target="_blank"
-            className="text-sm text-black font-light tracking-wide"
+            className="text-xl tracking-widest uppercase pb-3 text-secondary"
             >
-            @re_move_coaching</a>
+            <FaInstagram size={50} /></a>
         </div>
     </div>
 </div>
@@ -46,4 +79,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

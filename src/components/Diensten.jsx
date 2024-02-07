@@ -1,9 +1,12 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+// linking
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Diensten = () => {
   return (
-  <section>
+  <section id="toppage">
         {/* HERO */}
 <section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
   {/* text */}
@@ -35,8 +38,10 @@ const Diensten = () => {
         <div className="w-full text-center">
           <h1 className="font-bold text-l">€80 excl.</h1>
         </div>
-      <button className="bg-[#f1f1f1] hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">Informatie</button>
-      </div>
+        <Link to="/contact#contactinformation" className="bg-[#f1f1f1] cursor-pointer hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">
+            Informatie
+        </Link>
+        </div>
     </div>
 
 {/* Card 2*/}
@@ -54,8 +59,9 @@ const Diensten = () => {
       <div className="w-full text-center">
           <h1 className="font-bold text-l">Prijs in overleg</h1>
         </div>
-      <button className="bg-[#f1f1f1] hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">Informatie</button>
-      </div>
+        <Link to="/contact#contactinformation" className="bg-[#f1f1f1] cursor-pointer hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">
+            Informatie
+        </Link>      </div>
     </div>
 
 {/* Card 3*/}
@@ -73,8 +79,9 @@ const Diensten = () => {
       <div className="w-full text-center">
           <h1 className="font-bold text-l">€100 excl.</h1>
         </div>
-      <button className="bg-[#f1f1f1] hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">Informatie</button>
-      </div>
+        <Link to="/contact#contactinformation" className="bg-[#f1f1f1] cursor-pointer hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">
+            Informatie
+        </Link>      </div>
     </div>
 
     {/* Card 4*/}
@@ -92,8 +99,9 @@ const Diensten = () => {
       <div className="w-full text-center">
           <h1 className="font-bold text-l">Prijs in overleg</h1>
         </div>
-      <button className="bg-[#f1f1f1] hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">Informatie</button>
-      </div>
+        <Link to="/contact#contactinformation" className="bg-[#f1f1f1] cursor-pointer hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">
+            Informatie
+        </Link>      </div>
     </div>
   </div>
 </section>
@@ -104,7 +112,9 @@ const Diensten = () => {
     <div className="w-full p-10 lg:p-20">
         <h1 className="text-[30px] lg:text-[80px] uppercase font-bold text-right tracking-widest">volgende <br /><span className="text-secondary">pagina</span></h1>
         <div className="flex flex-row justify-end items-center pt-5">
-        <p className="flex items-center justify-center text-right uppercase font-bold tracking-wider">Voorwaarden </p>
+        <Link to="/voorwaarden#toppage" className="flex items-center justify-center text-right uppercase font-bold tracking-wider">
+        Voorwaarden
+        </Link>
         <FaArrowRight className="text-secondary"/>
         </div>
     </div>

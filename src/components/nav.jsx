@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link as RouterLink } from 'react-router-dom';
+// linking
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -32,10 +33,10 @@ const Nav = () => {
   return (
     <div className="sticky top-0 flex h-24 md:h-32 bg-primary z-50 justify-between items-center w-screen px-[30px] text-lg">
       <div>
-        <RouterLink to="/" spy={true} smooth={true} duration={500}>
+        <Link to="/#toppage">
           <h1 className='w-full text-2xl font-light text-start text-secondary uppercase tracking-wider'
           >Re-Move Coaching</h1>
-        </RouterLink>
+        </Link>
       </div>
       <ul className="hidden lg:flex">
         {links.map(({ id, link }) => (
@@ -43,9 +44,9 @@ const Nav = () => {
             key={id}
             className="px-4 cursor-pointer text-l uppercase font-medium tracking-widest hover:scale-105 duration-200"
           >
-            <RouterLink to={link} spy={true} smooth={true} duration={500}>
+            <Link to={link}>
               {link}
-            </RouterLink>
+            </Link>
           </li>
         ))}
       </ul>
@@ -64,15 +65,12 @@ const Nav = () => {
               key={id}
               className="px-4 cursor-pointer py-6 text-4xl uppercase font-light tracking-widest duration-200"
             >
-              <RouterLink
+              <Link
                 onClick={() => setNav(!nav)}
                 to={link}
-                spy={true}
-                smooth={true}
-                duration={500}
               >
                 {link}
-              </RouterLink>
+              </Link>
             </li>
           ))}
         </ul>

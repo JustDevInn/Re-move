@@ -1,8 +1,12 @@
 import React from "react";
+import { FaArrowLeft } from "react-icons/fa";
+// linking
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Contact = () => {
   return (
-  <section>
+  <section id="toppage">
 {/* HERO */}
 <section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
   {/* text */}
@@ -12,7 +16,7 @@ const Contact = () => {
 </section>
 
 {/* Contact form */}
-<section className="w-screen">
+<section id="contactinformation" className="w-screen">
   <div className="flex flex-col p-10 lg:p-20">
     <div>
       <h1 className="text-[35px] lg:text-[50px] pb-20 uppercase font-bold tracking-widest text-right">
@@ -96,6 +100,18 @@ const Contact = () => {
     </div>
     </div>
   </div>
+</section>
+{/* VOLGENDE PAGINA */}
+<section className="w-screen">
+    <div className="w-full p-10 lg:p-20">
+        <h1 className="text-[30px] lg:text-[80px] uppercase font-bold text-left tracking-widest">volgende <br /><span className="text-secondary">pagina</span></h1>
+        <div className="flex flex-row justify-start items-center pt-5">
+        <FaArrowLeft className="text-secondary pr-1"/>
+        <Link to="/#toppage" className="flex items-center justify-center uppercase font-bold tracking-wider">
+        Homepage
+        </Link>
+        </div>
+    </div>
 </section>
   </section>
   );
