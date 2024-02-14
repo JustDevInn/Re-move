@@ -2,7 +2,7 @@ import React from 'react';
 // import router
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
-// import pages test debugged run build
+// import pages
 import Nav from './components/Nav';
 import Home from './components/home';
 import Werkwijze from './components/Werkwijze';
