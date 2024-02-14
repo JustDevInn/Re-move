@@ -10,7 +10,7 @@ import Informatie from './components/Informatie';
 import Diensten from './components/Diensten';
 import Voorwaarden from './components/Voorwaarden';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Footer from './components/Footers';
 
 const App = () => {
   return (

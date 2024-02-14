@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { TiClipboard } from "react-icons/ti";
 
 
-const Footer = () => {
+const Footers = () => {
 
     const [copied, setCopied] = useState(false);
   
@@ -79,4 +79,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footers;
