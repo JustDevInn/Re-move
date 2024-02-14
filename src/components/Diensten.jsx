@@ -2,7 +2,6 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 // linking
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
 
 const Diensten = () => {
   return (
