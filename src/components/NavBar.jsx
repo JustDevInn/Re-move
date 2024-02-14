@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 // linking
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   const links = [
@@ -79,4 +79,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavBar;

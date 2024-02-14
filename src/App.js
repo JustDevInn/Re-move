@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 // import pages
-import Nav from './components/Nav';
+import Nav from './components/NavBar';
 import Home from './components/home';
 import Werkwijze from './components/Werkwijze';
 import Informatie from './components/Informatie';
