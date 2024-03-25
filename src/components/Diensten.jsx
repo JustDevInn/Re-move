@@ -9,7 +9,8 @@ const Diensten = () => {
         {/* HERO */}
 <section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
   {/* text */}
-    <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">Diensten</div>
+    <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">Ons aanbod
+</div>
   {/* image */}
     <div className="w-[400px] h-[556px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
 </section>
@@ -29,7 +30,11 @@ const Diensten = () => {
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">coachingssessies <br />individueel</h1>
         <h5 className="uppercase text-sm">(Frequentie en duur is maatwerk)</h5>
-        <p className="font-thin text-xs py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Ipsam, fuga eos nostrum voluptates enim explicabo voluptatum <br />et placeat aperiam laborum?
+        <p className="font-thin text-xs py-2">
+        - Duur sessie 1 uur <br />
+        - Conform de thema’s <br />
+        - Gebruik van materiaal inbegrepen in prijs <br />
+        - Eindproduct = Emotieplan
         </p>
       </div>
       {/* right side */}
@@ -50,7 +55,12 @@ const Diensten = () => {
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">Workshop / <br />Clinics voor groepen</h1>
-        <p className="font-thin text-xs py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Ipsam, fuga eos nostrum voluptates enim explicabo voluptatum <br />et placeat aperiam laborum?
+        <p className="font-thin text-xs py-2">
+        - Offerte op aanvraag <br />
+        - Duur / groepsgrootte in overleg <br />
+        - Ook beschikbaar voor volwassenen <br />
+        - Interessant voor teambuilding <br />
+        - Interessant voor mensen die werken met kinderen/volwassenen
         </p>
       </div>
       {/* right side */}
@@ -70,7 +80,10 @@ const Diensten = () => {
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">Ouder-kind <br />interactie</h1>
-        <p className="font-thin text-xs py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Ipsam, fuga eos nostrum voluptates enim explicabo voluptatum <br />et placeat aperiam laborum?
+        <p className="font-thin text-xs py-2">
+        - Frequentie en duur is maatwerk <br />
+        - Zowel ouder-kind als gezinsmogelijkheden <br />
+        - Gebruik van materiaal in prijs inbegrepen
         </p>
       </div>
       {/* right side */}
@@ -90,13 +103,16 @@ const Diensten = () => {
     {/* left side */}
       <div className="flex flex-col text-center p-2 justify-center items-center">
         <h1 className="uppercase font-bold text-3xl p-2">Hulp bij kind in <br />scheiding </h1>
-        <p className="font-thin text-xs py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Ipsam, fuga eos nostrum voluptates enim explicabo voluptatum <br />et placeat aperiam laborum?
+        <p className="font-thin text-xs py-2">
+        - Duur sessie 1 uur <br />
+        - Gebruik van materiaal inbegrepen in prijs <br />
+        - Eindproduct = Ouder/kind plan
         </p>
       </div>
       {/* right side */}
       <div className="p-2 flex flex-col justify-center items-center gap-4">
       <div className="w-full text-center">
-          <h1 className="font-bold text-l">Prijs in overleg</h1>
+          <h1 className="font-bold text-l">€80 excl.</h1>
         </div>
         <Link to="/contact#contactinformation" className="bg-[#f1f1f1] cursor-pointer hover:bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-600 rounded-xl shadow">
             Informatie

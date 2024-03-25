@@ -19,16 +19,21 @@ const Informatie = () => {
   <div className="px-10 lg:px-20">
   {/* oprichters */}
     <div className="lg:w-1/2 rounded-xl shadow-xl bg-secondary p-5">
-      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest">oprichters</h1>
+      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
       <div className="pl-2 tracking-widest">
       <p>
-<span className="strong">RE-MOVE Coaching</span> is opgezet door:
-      <br /><br />
-<span className="font-bold uppercase">- Rein van Bedaf</span> <br />(muziektherapeut/bokstrainer) 
+<span className="font-bold uppercase">- Rein van Bedaf</span> <br /><span className="text-xs">muziektherapeut/bokstrainer.</span>
 <br />
 <br />
-<span className="font-bold uppercase">- Evi Schut</span> <br />(sociaal pedagogisch hulpverlener / teamleider in de GGZ).
+<span className="font-bold uppercase">- Evi Schut</span> <br /> <span className="text-xs">sociaal pedagogisch hulpverlener / teamleider in de GGZ.</span>
       </p>
+      </div>
+      <div className="py-10 pl-2 text-xs tracking-widest">
+      Boksen is voor ons beide een fijne uitlaatklep na een drukke werkweek, emotionele inspanning of momenten van somberheid. Als bokstrainer heeft Rein gezien dat dit het zelfbeeld versterkte van de mensen die hij trainde. Mensen komen erachter dat ze meer kunnen dan ze dachten. Als oud-wedstrijd bokser heeft Rein ervaren dat er op deze momenten was niemand was behalve hijzelf waarop teruggevallen kon worden. Zelfredzaamheid, kracht en doorzettingsvermogen waren belangrijke levenslessen die het boksen hem geleerd hebben. 
+<br /><br />
+Als sociaal pedagogisch hulpverlener en schoolmaatschappelijk werker zag Evi dat praten niet altijd voldoende was. De kinderen en jongeren waarmee zij werkte vonden het lastig woorden te vinden voor hetgeen wat zij voelde. Door dingen visueel te maken leerde deze kinderen/jongeren zichzelf beter verwoorden en dus kennen. Ook veel goede gesprekken vonden plaats tijdens een wandeling, sportactiviteit of een spelletje. Zelf heeft Evi ervaren dat boksen haar kracht gaf waar ze dacht die kwijt te zijn. 
+<br /><br />
+Samen zagen Rein en Evi een gezamenlijke passie hierin: Boksen en coachen van mensen! 
       </div>
     </div>
 
@@ -38,12 +43,11 @@ const Informatie = () => {
       {/* programma */}
       <div className="lg:w-1/2">
       <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10">programma</h1>
-      <p className="tracking-widest">Dit programma is ontworpen om individuen te helpen bij het verbeteren van hun emotionele welzijn, zelfvertrouwen en sociale vaardigheden. Het combineert de fysieke voordelen van boksen met de kracht van emotionele begeleiding om een holistische ontwikkelingservaring te bieden.</p>
+      <p className="tracking-widest">Dit programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op zoek zijn naar persoonlijke groei en ontwikkeling. We combineren de fysieke voordelen van boksen met de kracht van emotionele begeleiding voor een holistische ontwikkelingservaring.</p>
       </div>
       {/* doelgroep */}
       <div className="lg:w-1/2 text-right py-5 lg:py-0">
         <p className="order-last lg:order-first tracking-widest">Onze doelgroep omvat kinderen en jongvolwassenen van 8 t/m 21 jaar die geïnteresseerd zijn in het verbeteren van hun sociaal-emotionele vaardigheden en op zoek zijn naar persoonlijke groei en ontwikkeling.</p>
-        <h1 className="order-first lg:order-last text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pt-10">onze <br />doelgroep</h1>
       </div>
     </div>
   </div>
@@ -55,16 +59,19 @@ const Informatie = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 lg:px-10 pb-10">
           <p className="tracking-widest">
-          Ons coaching traject biedt een combinatie van bokstraining en emotionele coachingsessies met inzet van sport en spel. Deelnemers zullen bokstechnieken leren terwijl ze ook werken aan het begrijpen en beheersen van hun emoties, stressvermindering en het ontwikkelen van sociale vaardigheden. Het programma is gemaakt om deelnemers op een spelende, bewegende manier hun emoties te voelen en leren uiten op een voor hun prettige manier. De volgende 4 punten zijn hierin belangrijk:
+          Ons coachingsprogramma combineert bokstraining met emotionele coachingsessies door middel van sport en spel. Deelnemers leren bokstechnieken en werken tegelijkertijd aan het begrijpen en beheersen van hun emoties, het verminderen van stress en het verbeteren van hun sociale vaardigheden. Het doel is om deelnemers op een leuke en actieve manier te helpen hun emoties te voelen en te leren uiten. De volgende vier punten zijn hierin belangrijk:
           </p>
         </div>
         <div className="lg:w-1/2 lg:p-10 py-10 p-5
         rounded-xl shadow-lg bg-secondary tracking-widest">
           <p>
-              <span className="font-bold uppercase">Holisme</span>: Wij benaderen ontwikkeling holistisch, waarbij fysieke en emotionele aspecten samenkomen om een volledig programma te creëren. <br /><br />
-              <span className="font-bold uppercase">Ervaringsgericht leren</span>: Deelnemers leren door actief bezig te zijn, waardoor de toepassing van emotionele vaardigheden in het dagelijks leven wordt vergemakkelijkt. <br /><br />
-              <span className="font-bold uppercase">Deskundige begeleiding</span>: Onze coaches zijn getraind in het zowel boksen als emotionele begeleiding, waardoor ze een unieke expertise bieden. <br /><br />
-              <span className="font-bold uppercase">Maatwerk</span>: We passen het programma aan de individuele behoeften van deelnemers aan, met aandacht voor de persoonlijke groei.
+              <span className="font-bold uppercase">Holisme</span>: we kijken naar de ontwikkeling als één geheel, waarbij fysieke en emotionele aspecten samenkomen.<br /><br />
+              <span className="font-bold uppercase">Leren door ervaring</span>: deelnemers leren door te doen. Zo wordt het makkelijker om emotionele vaardigheden in het dagelijks leven toe te passen.
+<br /><br />
+              <span className="font-bold uppercase">Professionele coaching</span>: onze coaches zijn gespecialiseerd in zowel boksen als het bieden van emotionele begeleiding. Dit zorgt voor unieke kennis en vaardigheden om iedere deelnemer op de beste manier te kunnen helpen.
+<br /><br />
+              <span className="font-bold uppercase">Persoonlijk aanpak</span>: we stemmen het programma af op wat elke deelnemer nodig heeft, gericht op hun eigen ontwikkeling en met aandacht voor persoonlijke groei.
+
               </p>
         </div>
       </div>

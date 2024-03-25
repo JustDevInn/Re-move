@@ -18,13 +18,9 @@ const Home = () => {
 {/* text area 1*/}
 <section className="w-screen p-10 lg:px-20 flex">
     <div className="tracking-wider w-full p-5 rounded-xl shadow-lg">
-      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10">
-        Wil <span className="text-secondary">jij</span> geholpen <br />worden <span className="text-secondary">?</span>
-      </h1>
         <h5 className="text-xl text-end">
-            Ervaar jij wel eens <span className="text-secondary font-bold">onrust</span> en voel jij dit in je hele lichaam? <br />
-            Word je soms te snel <span className="font-bold">boos</span> of <span className="font-bold">verdrietig</span>? Krijg jij wel eens <br /><span className="text-secondary font-bold">buikpijn</span>/<span className="font-bold">hoofdpijn</span> van <span className="font-bold">spanning</span>? Ben je <span className="text-secondary font-bold">onzeker</span> of denk <br />je snel dat je <span className="text-secondary font-bold">iets niet kan</span>?
-            Vind je het <span className="font-bold">lastig</span> om te <span className="font-bold">praten</span> <br />over hoe je je voelt?
+        Wil je je zelfvertrouwen vergroten en je zelfbeeld verbeteren, of leren hoe je emoties kunt verwerken en uiten, zonder dat je er altijd over hoeft te praten? Houd je van actief bezig zijn en ben je tussen de 8 en 21 jaar oud? Dan is RE-MOVE Coaching iets voor jou!
+
         </h5>
     </div>
 </section>
@@ -42,12 +38,9 @@ const Home = () => {
         <br /><br />
         Vind je het fijn om in beweging te zijn?
         En ben jij tussen de 8 en 21 jaar?
+        <br /><br />
+        Dan past RE-MOVE coaching bij jou!
       </h5>
-      <h1 className="text-xl font-bold
-        tracking-widest text-right lg:text-left uppercase pt-5">
-        Dan past <br /><span className="text-secondary lg:uppercase">Re-move </span>
-        <span className="text-secondary">Coaching</span> bij jou!
-        </h1>
     </div>
     {/* image on large screens */}
     <div className="hidden lg:block bg-removelogo bg-center bg-contain bg-no-repeat h-[550px] w-[450px]"></div>
@@ -73,18 +66,14 @@ const Home = () => {
     {/* text */}
         <h5 className="text-xl
         tracking-widest text-justify">
-        <span className="font-bold">Sporten</span> is super goed voor je mentale gezondheid! <br />
-        Als je sport maak je endorfine aan, het helpt  <span className="font-bold">tegen stress</span>, traint je brein,
-        leert je beter concentreren, leert <span className="text-secondary">omgaan met teleurstellingen</span>, geeft je 
-        <span className="font-bold">zelfvertrouwen</span> een boost als iets lukt maar is ook een goede manier om emoties
-        te ontdekkenen hiermee te oefenen.
-        <span className="text-secondary"></span>
+        Sporten is geweldig voor je mentale gezondheid. Het maakt endorfine aan, vermindert stress, traint je brein, verbetert je concentratie, helpt je omgaan met tegenslagen en verhoogt je zelfvertrouwen. Het is ook een manier om emoties te verkennen en hiermee te oefenen.
+
         </h5>
         <h1 className="py-5
         text-[20px] lg:text-[50px]
-        font-bold uppercase tracking-widest text-justify">
-        "Boxen is <span className="text-secondary">niet </span>
-        alleen een <br />sport"
+        font-bold uppercase tracking-widest text-justify text-secondary">
+        "Boksen is meer
+        dan een sport"
         </h1>
         <p className="tracking-widest text-xl">
             Het is ook een geweldige manier om <span className="font-bold">sterker</span> in je schoenen te staan, met je <span className="text-secondary">emoties</span> om te gaan,
