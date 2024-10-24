@@ -11,7 +11,7 @@ const Voorwaarden = () => {
   {/* text */}
     <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">Voorwaar<br/>den</div>
   {/* image */}
-    <div className="w-[400px] h-[556px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+    <div className="w-[400px] h-[556px] bg-removecouple bg-center bg-contain bg-no-repeat" role="img" aria-label="Therapist couple" ></div>
 </section>
 
 {/* ALG VOORWAARDEN */}

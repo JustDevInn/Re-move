@@ -17,7 +17,7 @@ const Werkwijze = () => {
   <div className="flex flex-col lg:flex-row rounded-xl shadow-xl hover:scale-105 bg-secondary duration-300">
     {/* logo */}
     <div className="flex justify-center items-center lg:w-1/4 p-5">
-      <div className=" w-[200px] h-[200px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+      <div className=" w-[200px] h-[200px] bg-kennismaken bg-center bg-cover rounded-xl bg-no-repeat"></div>
     </div>
     {/* text */}
     <div className=" p-5 lg:p-10 flex justify-center items-center">
@@ -34,7 +34,7 @@ const Werkwijze = () => {
    <div className="flex flex-col lg:flex-row rounded-xl shadow-xl hover:scale-105 duration-300">
     {/* logo */}
     <div className="flex justify-center items-center lg:w-1/4 p-5">
-      <div className=" w-[200px] h-[200px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+      <div className=" w-[200px] h-[200px] bg-boksen bg-center bg-cover rounded-xl bg-no-repeat"></div>
     </div>
     {/* text */}
     <div className=" p-5 lg:p-10 flex justify-center items-center">
@@ -50,7 +50,7 @@ const Werkwijze = () => {
 <div className="flex flex-col lg:flex-row rounded-xl shadow-xl hover:scale-105 bg-secondary duration-300">
     {/* logo */}
     <div className="flex justify-center items-center lg:w-1/4 p-5">
-      <div className=" w-[200px] h-[200px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+      <div className=" w-[200px] h-[200px] bg-emotiegevoel bg-center bg-cover rounded-xl bg-no-repeat"></div>
     </div>
     {/* text */}
     <div className=" p-5 lg:p-10 flex justify-center items-center">
@@ -66,7 +66,7 @@ const Werkwijze = () => {
   <div className="flex flex-col lg:flex-row rounded-xl shadow-xl hover:scale-105 duration-300">
     {/* logo */}
     <div className="flex justify-center items-center lg:w-1/4 p-5">
-      <div className=" w-[200px] h-[200px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+      <div className=" w-[200px] h-[200px] bg-grenzenherkennen bg-center bg-cover rounded-xl bg-no-repeat"></div>
     </div>
     {/* text */}
     <div className=" p-5 lg:p-10 flex justify-center items-center">
@@ -82,7 +82,7 @@ const Werkwijze = () => {
   <div className="flex flex-col lg:flex-row rounded-xl shadow-xl hover:scale-105 bg-secondary duration-300">
     {/* logo */}
     <div className="flex justify-center items-center lg:w-1/4 p-5">
-      <div className=" w-[200px] h-[200px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+      <div className=" w-[200px] h-[200px] bg-gedrag bg-center bg-cover rounded-xl bg-no-repeat"></div>
     </div>
     {/* text */}
     <div className=" p-5 lg:p-10 flex justify-center items-center">
@@ -98,7 +98,7 @@ const Werkwijze = () => {
   <div className="flex flex-col lg:flex-row rounded-xl shadow-xl hover:scale-105 duration-300">
     {/* logo */}
     <div className="flex justify-center items-center lg:w-1/4 p-5">
-      <div className=" w-[200px] h-[200px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+      <div className=" w-[200px] h-[200px] bg-evaluatie bg-center bg-cover rounded-xl bg-no-repeat"></div>
     </div>
     {/* text */}
     <div className=" p-5 lg:p-10 flex justify-center items-center">

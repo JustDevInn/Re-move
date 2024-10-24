@@ -6,13 +6,19 @@ import { Link } from 'react-router-dom';
 const Informatie = () => {
   return (
     <section id="toppage">
-    {/* HERO */}
-<section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
+{/* Hero section */}
+<section className="relative w-screen h-[85vh] bg-informatie bg-cover bg-center flex justify-center items-center">
   {/* text */}
-    <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">Informatie</div>
-  {/* image */}
-    <div className="w-[400px] h-[556px] bg-removecouple bg-center bg-contain bg-no-repeat"></div>
+  <div className="absolute bottom-10 left-5 text-white p-5">
+    <h1 className="text-[50px] lg:text-[120px] font-bold uppercase">
+      Informatie
+    </h1>
+  </div>
+
+  {/* transparent overlay to darken image for better text visibility */}
+  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
 </section>
+
 
 {/* INFORMATION*/}
 <section className="w-screen py-20">
