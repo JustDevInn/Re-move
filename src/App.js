@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 // import pages
 import Nav from './components/NavBar';
-import Home from './components/Home';
+// import Home from './components/Home';
 import Werkwijze from './components/Werkwijze';
 import Informatie from './components/Informatie';
 import Diensten from './components/Diensten';
@@ -20,7 +20,7 @@ const App = () => {
       <Nav />
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Home />}/>
+        {/* <Route path='/' element={<Home />}/> */}
         <Route path='/werkwijze' element={<Werkwijze />}/>
         <Route path='/informatie' element={<Informatie />}/>
         <Route path='/diensten' element={<Diensten />}/>
