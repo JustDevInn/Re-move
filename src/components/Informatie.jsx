@@ -23,32 +23,40 @@ const Informatie = () => {
 {/* INFORMATION*/}
 <section className="w-screen py-20">
   <div className="px-10 lg:px-20">
+  <div className="flex flex-col lg:flex-row h-[80vh] w-full">
   {/* oprichters */}
-    <div className="lg:w-1/2 rounded-xl shadow-xl bg-secondary p-5">
-      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
-      <div className="pl-2 tracking-widest">
-      <p>
-<span className="font-bold uppercase">- Rein van Bedaf</span> <br /><span className="text-xs">muziektherapeut/bokstrainer.</span>
-<br />
-<br />
-<span className="font-bold uppercase">- Evi Schut</span> <br /> <span className="text-xs">sociaal pedagogisch hulpverlener / teamleider in de GGZ.</span>
-      </p>
-      </div>
-      <div className="py-10 pl-2 text-xs tracking-widest">
-      Boksen is voor ons beide een fijne uitlaatklep na een drukke werkweek, emotionele inspanning of momenten van somberheid. Als bokstrainer heeft Rein gezien dat dit het zelfbeeld versterkte van de mensen die hij trainde. Mensen komen erachter dat ze meer kunnen dan ze dachten. Als oud-wedstrijd bokser heeft Rein ervaren dat er op deze momenten was niemand was behalve hijzelf waarop teruggevallen kon worden. Zelfredzaamheid, kracht en doorzettingsvermogen waren belangrijke levenslessen die het boksen hem geleerd hebben. 
-<br /><br />
-Als sociaal pedagogisch hulpverlener en schoolmaatschappelijk werker zag Evi dat praten niet altijd voldoende was. De kinderen en jongeren waarmee zij werkte vonden het lastig woorden te vinden voor hetgeen wat zij voelde. Door dingen visueel te maken leerde deze kinderen/jongeren zichzelf beter verwoorden en dus kennen. Ook veel goede gesprekken vonden plaats tijdens een wandeling, sportactiviteit of een spelletje. Zelf heeft Evi ervaren dat boksen haar kracht gaf waar ze dacht die kwijt te zijn. 
-<br /><br />
-Samen zagen Rein en Evi een gezamenlijke passie hierin: Boksen en coachen van mensen! 
-      </div>
-    </div>
+<div className="lg:w-1/2 rounded-xl lg:rounded-l-xl lg:rounded-r-none shadow-xl bg-secondary p-5">
+  <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
+  <div className="pl-2 tracking-widest">
+    <p>
+      <span className="font-bold uppercase">- Rein van Bedaf</span> <br />
+      <span className="text-xs">muziektherapeut/bokstrainer.</span>
+      <br /><br />
+      <span className="font-bold uppercase">- Evi Schut</span> <br />
+      <span className="text-xs">sociaal pedagogisch hulpverlener / teamleider in de GGZ.</span>
+    </p>
+  </div>
+  <div className="py-10 pl-2 text-xs tracking-widest">
+    Boksen is voor ons beide een fijne uitlaatklep na een drukke werkweek, emotionele inspanning of momenten van somberheid. Als bokstrainer heeft Rein gezien dat dit het zelfbeeld versterkte van de mensen die hij trainde. Mensen komen erachter dat ze meer kunnen dan ze dachten. Als oud-wedstrijd bokser heeft Rein ervaren dat er op deze momenten niemand was behalve hijzelf waarop teruggevallen kon worden. Zelfredzaamheid, kracht en doorzettingsvermogen waren belangrijke levenslessen die het boksen hem geleerd hebben. 
+    <br /><br />
+    Als sociaal pedagogisch hulpverlener en schoolmaatschappelijk werker zag Evi dat praten niet altijd voldoende was. De kinderen en jongeren waarmee zij werkte vonden het lastig woorden te vinden voor hetgeen wat zij voelde. Door dingen visueel te maken leerde deze kinderen/jongeren zichzelf beter verwoorden en dus kennen. Ook veel goede gesprekken vonden plaats tijdens een wandeling, sportactiviteit of een spelletje. Zelf heeft Evi ervaren dat boksen haar kracht gaf waar ze dacht die kwijt te zijn. 
+    <br /><br />
+    Samen zagen Rein en Evi een gezamenlijke passie hierin: Boksen en coachen van mensen! 
+  </div>
+</div>
+
+
+  {/* Right Image Section */}
+  <div className="hidden lg:block lg:w-1/2 h-[80vh] bg-couple bg-cover bg-center"></div>
+</div>
+
 
   {/* container programma en doelroep */}
     <div className="py-10 flex justify-center items-start flex-col lg:flex-row
-    p-5 rounded-xl shadow-lg">
+    p-5 rounded-xl">
       {/* programma */}
       <div className="lg:w-1/2">
-      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10">programma</h1>
+      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest md:pt-0 pt-20 pb-10">programma</h1>
       <p className="tracking-widest">Dit programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op zoek zijn naar persoonlijke groei en ontwikkeling. We combineren de fysieke voordelen van boksen met de kracht van emotionele begeleiding voor een holistische ontwikkelingservaring.</p>
       </div>
       {/* doelgroep */}
@@ -60,7 +68,7 @@ Samen zagen Rein en Evi een gezamenlijke passie hierin: Boksen en coachen van me
 
   {/* ONS COACHING TRAJECT */}
   <section className="w-screen p-10 lg:p-20">
-    <div className="flex flex-col rounded-xl shadow-lg p-5">
+    <div className="flex flex-col rounded-xl p-5">
     <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest text-center pb-10">Ons coaching traject</h1>
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 lg:px-10 pb-10">
@@ -69,7 +77,7 @@ Samen zagen Rein en Evi een gezamenlijke passie hierin: Boksen en coachen van me
           </p>
         </div>
         <div className="lg:w-1/2 lg:p-10 py-10 p-5
-        rounded-xl shadow-lg bg-secondary tracking-widest">
+        rounded-xl shadow-lg tracking-widest">
           <p>
               <span className="font-bold uppercase">Holisme</span>: we kijken naar de ontwikkeling als één geheel, waarbij fysieke en emotionele aspecten samenkomen.<br /><br />
               <span className="font-bold uppercase">Leren door ervaring</span>: deelnemers leren door te doen. Zo wordt het makkelijker om emotionele vaardigheden in het dagelijks leven toe te passen.
@@ -82,6 +90,8 @@ Samen zagen Rein en Evi een gezamenlijke passie hierin: Boksen en coachen van me
         </div>
       </div>
     </div>
+       {/* Image Section */}
+  <div className="bg-grenzenherkennen h-[80vh] w-full bg-cover bg-center"></div>
   </section>
 </section>
 {/* VOLGENDE PAGINA */}

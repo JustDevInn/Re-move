@@ -27,6 +27,7 @@ module.exports = {
         'grenzenherkennen': "url('./img/grenzenherkennen.JPG')",
         'gedrag': "url('./img/gedrag.JPG')",
         'evaluatie': "url('./img/evaluatie.JPG')",
+        'voorwaarden': "url('./img/voorwaarden.JPG')",
       },
       ringColor: {
         black: '#000', // Custom black outline color for focus

@@ -6,13 +6,22 @@ import { Link } from 'react-router-dom';
 const Voorwaarden = () => {
   return (
   <section id="toppage">
-        {/* HERO */}
-<section className="w-screen px-10 lg:px-20 flex flex-col md:flex-row justify-evenly items-center tracking-widest">
+{/* Hero section */}
+<section className="relative w-screen h-[85vh] bg-voorwaarden bg-cover bg-center flex justify-center items-center">
   {/* text */}
-    <div className="text-[50px] lg:text-[120px] font-bold uppercase pt-20 lg:pt-0">Voorwaar<br/>den</div>
-  {/* image */}
-    <div className="w-[400px] h-[556px] bg-removecouple bg-center bg-contain bg-no-repeat" role="img" aria-label="Therapist couple" ></div>
+  <div className="absolute bottom-10 left-5 text-white p-5">
+    <h1 className="text-[50px] lg:text-[120px] font-bold uppercase leading-none">
+      Voorwaarden
+    </h1>
+  </div>
+
+  {/* transparent overlay to darken image for better text visibility */}
+  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+
+  {/* background image */}
+  <div className="w-full h-full bg-voorwaarden bg-cover bg-center" role="img" aria-label="Therapist couple"></div>
 </section>
+
 
 {/* ALG VOORWAARDEN */}
 <section className="w-screen">

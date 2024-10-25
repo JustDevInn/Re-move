@@ -123,7 +123,9 @@ const Diensten = () => {
             Informatie
         </Link>      </div>
     </div>
-  </div>
+  </div>  
+   {/* Image Section */}
+  <div className="bg-evaluatie h-[80vh] w-full bg-cover bg-center"></div>
 </section>
 
 

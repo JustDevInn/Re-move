@@ -20,19 +20,20 @@ const Footers = () => {
   };
 
   return (
-    <footer className="w-screen bg-primary p-10 h-[30vh] relative">
+    <footer className="w-full bg-primary p-10 h-[5 0vh] relative">
       {/* Centered Content */}
       <div className="w-full flex flex-col justify-center items-center font-primary font-medium h-full space-y-4">
         {/* Logo */}
-        <div className="md:w-[500px] md:h-[200px] w-[250px] h-[150px] bg-removeLangweb bg-center bg-contain bg-no-repeat"></div>
+        <div className="md:w-[500px] md:h-[200px] w-[250px] h-[150px] bg-removeLangweb bg-center bg-cover bg-no-repeat"></div>
+
 
         {/* Contact Text */}
         <div>
-          <p className="text-l tracking-wide text-center">Neem contact met ons op via een van de volgende opties.</p>
+          <p className="font-thin text-center">Neem contact met ons op via een van de volgende opties.</p>
         </div>
 
         {/* Social Icons Container (Smaller Icons) */}
-        <div className="flex justify-center space-x-12 ">
+        <div className="flex justify-center space-x-12">
           {/* EMAIL */}
           <a
             className="text-xl tracking-widest uppercase text-secondary"
@@ -64,16 +65,17 @@ const Footers = () => {
             <FaInstagram size={20} />
           </a>
         </div>
-      </div>
-
-      {/* KVK Information */}
-      <div className="w-full text-xs flex justify-center items-center space-x-6 py-5 absolute bottom-0">
+         {/* KVK Information */}
+      <div className="w-full text-xs flex justify-between items-center pt-10 pb-2 px-10 absolute bottom-0">
         <p><span className="text-secondary">KVK</span> 87730278</p>
         <p><span className="text-secondary">SKJ</span> 100016128</p>
         <Link to="/voorwaarden#toppage" className="focus:outline focus:ring-2 focus:ring-black underline">
           Algemene voorwaarden
         </Link>
       </div>
+      </div>
+
+     
     </footer>
   );
 };

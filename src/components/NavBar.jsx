@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <header className='bg-primary sticky top-0 w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
+    <header className='bg-primary sticky top-0 w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[100px] flex items-center'>
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo for desktop and mobile */}
         <Link to="/" className="w-[200px] h-[100px] bg-removeLangweb bg-contain bg-no-repeat"></Link>
