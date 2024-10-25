@@ -52,11 +52,11 @@ const Informatie = () => {
 
 
   {/* container programma en doelroep */}
-    <div className="py-10 flex justify-center items-start flex-col lg:flex-row
+    <div className="py-10 mt-40 md:mt-20 flex justify-center items-start flex-col lg:flex-row
     p-5 rounded-xl">
       {/* programma */}
       <div className="lg:w-1/2">
-      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest md:pt-0 pt-20 pb-10">programma</h1>
+      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10">programma</h1>
       <p className="tracking-widest">Dit programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op zoek zijn naar persoonlijke groei en ontwikkeling. We combineren de fysieke voordelen van boksen met de kracht van emotionele begeleiding voor een holistische ontwikkelingservaring.</p>
       </div>
       {/* doelgroep */}

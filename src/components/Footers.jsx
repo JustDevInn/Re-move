@@ -66,7 +66,7 @@ const Footers = () => {
           </a>
         </div>
          {/* KVK Information */}
-      <div className="w-full text-xs flex justify-between items-center pt-10 pb-2 px-10 absolute bottom-0">
+      <div className="w-full text-xs flex justify-between items-center pt-10 pb-10 px-10 absolute bottom-0">
         <p><span className="text-secondary">KVK</span> 87730278</p>
         <p><span className="text-secondary">SKJ</span> 100016128</p>
         <Link to="/voorwaarden#toppage" className="focus:outline focus:ring-2 focus:ring-black underline">
