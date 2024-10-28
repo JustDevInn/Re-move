@@ -22,8 +22,6 @@ const Diensten = () => {
 
 {/* Wat bieden wij */}
 <section className="w-screen">
-<h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest p-10 lg:p-20">Wat wij bieden</h1>
-
 {/* Card container */}
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10 lg:p-20">
 

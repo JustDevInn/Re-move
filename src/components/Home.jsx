@@ -21,7 +21,7 @@ const Home = () => {
       {/* Section 1 */}
       <section className="w-full py-20">
         <div className="px-10 lg:px-20">
-          <div className="p-5 text-center lg:w-2/3 mx-auto space-y-6">
+          <div className="p-5 text-justify lg:w-2/3 mx-auto space-y-6">
             <p className="text-xl leading-relaxed">
             Geholpen worden bij het vergroten van je <span className="font-bold">zelfvertrouwen</span>, je zelfbeeld verbeteren, leren hoe je emoties kunt verwerken en uiten op een voor jou fijne manier, zonder dat je er altijd over hoeft te praten? Houd je van actief bezig zijn en ben je tussen de 8 en 21 jaar oud? Dan is RE-MOVE Coaching iets voor jou!
             </p>
@@ -33,9 +33,9 @@ const Home = () => {
       <div className="bg-emotiegevoel h-[80vh] w-full bg-cover bg-center"></div>
 
       {/* Section 2: Experience Statement */}
-      <section className="w-full py-20 bg-white">
+      <section className="w-full py-20">
         <div className="px-10 lg:px-20 text-center">
-          <h1 className="text-[35px] lg:text-[50px] font-bold uppercase tracking-widest bg-gray-50 py-5">
+          <h1 className="text-[35px] lg:text-[50px] font-bold uppercase py-5">
             <span className="text-secondary">Ervaring</span> waar je op kan vertrouwen.
           </h1>
         </div>
@@ -45,8 +45,8 @@ const Home = () => {
       <div className="bg-boksen h-[80vh] w-full bg-cover bg-center"></div>
 
       {/* Section 3 */}
-      <section className="w-full py-10 bg-gray-50">
-        <div className="px-10 lg:px-20 text-start space-y-6">
+      <section className="flex justify-center w-full py-10 bg-gray-50">
+        <div className="px-10 lg:px-20 text-justify space-y-6 lg:w-2/3">
           <p className="text-xl leading-relaxed">
             Sporten is geweldig voor je mentale gezondheid. Het maakt endorfine aan, vermindert stress, traint je brein en verbetert je concentratie!
           </p>

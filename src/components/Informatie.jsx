@@ -21,11 +21,12 @@ const Informatie = () => {
 
 
 {/* INFORMATION*/}
-<section className="w-screen py-20">
+<section className="w-full py-20">
   <div className="px-10 lg:px-20">
-  <div className="flex flex-col lg:flex-row h-[80vh] w-full">
+  <div className="flex flex-col lg:flex-row lg:min-h-[80vh] w-full">
   {/* oprichters */}
-  <div className="lg:w-1/2 rounded-xl lg:rounded-l-xl lg:rounded-r-none shadow-xl bg-secondary p-5">  <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
+  <div className="lg:w-1/2 w-full lg:rounded-xl lg:rounded-l-xl lg:rounded-r-none shadow-xl bg-secondary p-5">  
+  <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
   <div className="pl-2 tracking-widest">
     <p>
       <span className="font-bold uppercase">- Rein van Bedaf</span> <br />
@@ -46,12 +47,12 @@ const Informatie = () => {
 
 
   {/* Right Image Section */}
-  <div className="hidden lg:block lg:w-1/2 h-[80vh] bg-couple bg-cover bg-center"></div>
+  <div className="lg:w-1/2 min-h-[80vh] bg-couple bg-cover bg-center rounded-b-xl lg:rounded-b-none"></div>
 </div>
 
 
   {/* container programma en doelroep */}
-    <div className="py-10 mt-40 md:mt-20 flex justify-center items-center md:items-start flex-col lg:flex-row
+    <div className="py-10 md:mt-20 flex justify-center items-center md:items-start flex-col lg:flex-row
     p-5 rounded-xl">
       {/* programma */}
       <div className="lg:w-1/2">

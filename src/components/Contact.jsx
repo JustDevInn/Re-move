@@ -7,7 +7,7 @@ const Contact = () => {
   return (
   <section id="toppage">
 {/* HERO */}
-<section className="relative w-screen h-[85vh] bg-couple bg-cover bg-center flex justify-center items-center">
+<section className="relative w-screen h-[85vh] bg-couple bg-cover flex justify-center items-center" style={{ backgroundPosition: '50% 20%' }}>
   {/* text */}
   <div className="absolute bottom-10 left-5 text-white p-5">
     <h1 className="text-[50px] lg:text-[120px] font-bold uppercase leading-none">

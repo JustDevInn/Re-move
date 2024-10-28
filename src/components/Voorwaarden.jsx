@@ -7,9 +7,9 @@ const Voorwaarden = () => {
   return (
   <section id="toppage">
 {/* Hero section */}
-<section className="relative w-screen h-[85vh] bg-voorwaarden bg-cover bg-center flex justify-center items-center">
+<section className="relative max-w-full h-[85vh] bg-voorwaarden bg-cover bg-center flex justify-center items-center">
   {/* text */}
-  <div className="absolute bottom-10 left-5 text-white p-5">
+  <div className="absolute bottom-5 left-0 sm:left-10 text-white p-2 sm:p-5">
     <h1 className="text-[50px] lg:text-[120px] font-bold uppercase leading-none">
       Voorwaarden
     </h1>
