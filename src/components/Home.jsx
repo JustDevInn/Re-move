@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero section */}
       <section className="relative w-full h-[85vh] bg-removecouple bg-cover bg-center flex justify-center items-center">
         <div className="absolute bottom-10 left-5 text-white p-5">
-          <h1 className="text-[80px] lg:text-[120px] font-bold uppercase leading-none">
+          <h1 className="text-[60px] lg:text-[120px] font-bold uppercase leading-none">
             Vind je <br />
             <span className="text-secondary">eigen</span><br />
             <span className="text-[90px] lg:text-[150px]">kracht</span>
@@ -23,10 +23,7 @@ const Home = () => {
         <div className="px-10 lg:px-20">
           <div className="p-5 text-center lg:w-2/3 mx-auto space-y-6">
             <p className="text-xl leading-relaxed">
-              Wil je je zelfvertrouwen vergroten en je zelfbeeld verbeteren, of leren hoe je emoties kunt verwerken en uiten, zonder dat je er altijd over hoeft te praten? Houd je van actief bezig zijn en ben je tussen de 8 en 21 jaar oud? Dan is RE-MOVE Coaching iets voor jou!
-            </p>
-            <p className="text-xl leading-relaxed">
-              Geholpen worden bij het vergroten van je <span className="font-bold">zelfvertrouwen</span>, je zelfbeeld verbeteren of hulp bij het verwerken en uiten van <span className="text-secondary">emoties</span>? Vind je het fijn om in beweging te zijn?
+            Geholpen worden bij het vergroten van je <span className="font-bold">zelfvertrouwen</span>, je zelfbeeld verbeteren, leren hoe je emoties kunt verwerken en uiten op een voor jou fijne manier, zonder dat je er altijd over hoeft te praten? Houd je van actief bezig zijn en ben je tussen de 8 en 21 jaar oud? Dan is RE-MOVE Coaching iets voor jou!
             </p>
           </div>
         </div>
@@ -51,7 +48,7 @@ const Home = () => {
       <section className="w-full py-10 bg-gray-50">
         <div className="px-10 lg:px-20 text-start space-y-6">
           <p className="text-xl leading-relaxed">
-            Sporten is geweldig voor je mentale gezondheid. Het maakt endorfine aan, vermindert stress, traint je brein, verbetert je concentratie...
+            Sporten is geweldig voor je mentale gezondheid. Het maakt endorfine aan, vermindert stress, traint je brein en verbetert je concentratie!
           </p>
           <h1 className="text-[30px] lg:text-[50px] font-bold text-center uppercase tracking-widest text-secondary">
             "Boksen is meer dan een sport"

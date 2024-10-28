@@ -25,8 +25,7 @@ const Informatie = () => {
   <div className="px-10 lg:px-20">
   <div className="flex flex-col lg:flex-row h-[80vh] w-full">
   {/* oprichters */}
-<div className="lg:w-1/2 rounded-xl lg:rounded-l-xl lg:rounded-r-none shadow-xl bg-secondary p-5">
-  <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
+  <div className="lg:w-1/2 rounded-xl lg:rounded-l-xl lg:rounded-r-none shadow-xl bg-secondary p-5">  <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-5">oprichters</h1>
   <div className="pl-2 tracking-widest">
     <p>
       <span className="font-bold uppercase">- Rein van Bedaf</span> <br />
@@ -52,32 +51,36 @@ const Informatie = () => {
 
 
   {/* container programma en doelroep */}
-    <div className="py-10 mt-40 md:mt-20 flex justify-center items-start flex-col lg:flex-row
+    <div className="py-10 mt-40 md:mt-20 flex justify-center items-center md:items-start flex-col lg:flex-row
     p-5 rounded-xl">
       {/* programma */}
       <div className="lg:w-1/2">
-      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest pb-10">programma</h1>
-      <p className="tracking-widest">Dit programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op zoek zijn naar persoonlijke groei en ontwikkeling. We combineren de fysieke voordelen van boksen met de kracht van emotionele begeleiding voor een holistische ontwikkelingservaring.</p>
+      <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest">programma</h1>
+      <p className="tracking-widest"></p>
       </div>
       {/* doelgroep */}
-      <div className="lg:w-1/2 text-right py-5 lg:py-0">
-        <p className="order-last lg:order-first tracking-widest">Onze doelgroep omvat kinderen en jongvolwassenen van 8 t/m 21 jaar die geïnteresseerd zijn in het verbeteren van hun sociaal-emotionele vaardigheden en op zoek zijn naar persoonlijke groei en ontwikkeling.</p>
+      <div className="lg:w-1/2 text-justify md:text-start py-5 lg:py-0">
+        <p className="order-last lg:order-first tracking-widest">
+        Dit programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op zoek zijn naar persoonlijke groei en ontwikkeling. We combineren de fysieke voordelen van boksen met de kracht van emotionele begeleiding voor een holistische ontwikkelingservaring.
+        <br /><br />
+        Onze doelgroep omvat kinderen en jongvolwassenen van 8 t/m 21 jaar die geïnteresseerd zijn in het verbeteren van hun sociaal-emotionele vaardigheden en op zoek zijn naar persoonlijke groei en ontwikkeling.</p>
       </div>
     </div>
   </div>
 
   {/* ONS COACHING TRAJECT */}
-  <section className="w-screen p-10 lg:p-20">
-    <div className="flex flex-col rounded-xl p-5">
-    <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest text-center pb-10">Ons coaching traject</h1>
+  <section className="w-screen">
+    <div className="flex flex-col rounded-xl p-10 lg:p-20">
+    <h1 className="text-[35px] lg:text-[50px] uppercase font-bold tracking-widest text-center">Ons coaching traject</h1>
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 lg:px-10 pb-10">
-          <p className="tracking-widest">
+        <div className="lg:w-1/2 lg:px-10 py-5">
+          <p className="tracking-widest text-justify md:text-start">
           Ons coachingsprogramma combineert bokstraining met emotionele coachingsessies door middel van sport en spel. Deelnemers leren bokstechnieken en werken tegelijkertijd aan het begrijpen en beheersen van hun emoties, het verminderen van stress en het verbeteren van hun sociale vaardigheden. Het doel is om deelnemers op een leuke en actieve manier te helpen hun emoties te voelen en te leren uiten. De volgende vier punten zijn hierin belangrijk:
           </p>
         </div>
+        {/* holisme kaart */}
         <div className="lg:w-1/2 lg:p-10 py-10 p-5
-        rounded-xl shadow-lg tracking-widest">
+        rounded-b-lg shadow-lg tracking-widest">
           <p>
               <span className="font-bold uppercase">Holisme</span>: we kijken naar de ontwikkeling als één geheel, waarbij fysieke en emotionele aspecten samenkomen.<br /><br />
               <span className="font-bold uppercase">Leren door ervaring</span>: deelnemers leren door te doen. Zo wordt het makkelijker om emotionele vaardigheden in het dagelijks leven toe te passen.
@@ -93,6 +96,7 @@ const Informatie = () => {
        {/* Image Section */}
   <div className="bg-grenzenherkennen h-[80vh] w-full bg-cover bg-center"></div>
   </section>
+
 </section>
 {/* VOLGENDE PAGINA */}
 <section className="w-screen">

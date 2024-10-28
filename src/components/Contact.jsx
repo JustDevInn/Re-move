@@ -20,77 +20,59 @@ const Contact = () => {
 </section>
 
 
-    {/* Contact form */}
-    <section id="contactinformation" className="w-screen">
-      <div className="flex flex-col p-10 lg:p-20">
-        <div>
-          <h1 className="text-[35px] lg:text-[50px] pb-20 uppercase font-bold tracking-widest text-right">
-            Neem de eerste stap, wij <br />maken graag kennis <br />met je.
-          </h1>
-        </div>
+{/* Contact form */}
+<section id="contactinformation" className="w-screen">
+  <div className="flex flex-col p-10 lg:p-20">
+    <div className="py-10">
+      <p className="text-2xl md:text-4xl pb-20 font-thin tracking-widest text-right">
+        Neem de eerste stap, wij <br />maken graag kennis <br />met je.
+      </p>
+    </div>
 
-        {/* form section */}
-        <div className="flex flex-col lg:flex-row">
-          {/* contact gegevens */}
-          <div className="flex justify-center items-center order-last lg:order-first lg:w-1/2 tracking-wider pt-10 lg:pt-0">
-            <p className="p-5 rounded-xl shadow-lg">
-              Evi@schutzorgondersteuning <br />
-              06 15 13 86 81 <br />
-              <br />
-              <span className="font-bold">KVK</span> 87730278 <br />
-              <span className="font-bold">SKJ</span> 100016128
-            </p>
-          </div>
+    <div className="flex flex-col lg:flex-row w-full">
+  {/* Visite kaartje section */}
+  <div className="lg:w-1/3 flex justify-center items-center order-last lg:order-first tracking-wider pt-10 lg:pt-0">
+    <p className="p-5 rounded-xl shadow-lg">
+      Evi@schutzorgondersteuning <br />
+      06 15 13 86 81 <br /><br />
+      <span className="font-bold">KVK</span> 87730278 <br />
+      <span className="font-bold">SKJ</span> 100016128
+    </p>
+  </div>
 
-          {/* verzend formulier */}
-          <div className="order-first lg:order-last flex flex-col lg:w-2/5 pb-10 lg:pb-5
-          rounded-xl shadow-lg bg-secondary p-5 py-10">
-            <h1 className="text-[35px] lg:text-[40px] pb-20 lg:pb-10 uppercase font-bold tracking-widest text-center">
-              Contact <br />formulier
-            </h1>
-            {/* form */}
-            <form
-              action="https://getform.io/f/19890081-7383-4319-832f-c7a6294b1408"
-              method="POST"
-              className='flex flex-col gap-y-4 p-4'>
-              <div className='flex gap-x-10'>
-                <input
-                  className="outline-none border-b border-b-brown h-[60px] bg-transparent font-light w-full pl-3 placeholder:text-black text-black tracking-widest"
-                  type="text"
-                  name="name"
-                  placeholder='Naam'
-                  required
-                />
-                <input
-                  className="outline-none border-b border-b-brown h-[60px] bg-transparent font-light w-full pl-3 placeholder:text-black text-black tracking-widest"
-                  type="email"
-                  name="email"
-                  placeholder='Email address'
-                  required
-                />
-              </div>
-              <input
-                className="outline-none border-b border-b-brown h-[60px] bg-transparent font-light w-full pl-3 placeholder:text-black text-black tracking-widest"
-                type="text"
-                name="subject"
-                placeholder='Onderwerp'
-                required
-              />
-              <textarea
-                className="outline-none border-b border-b-brown h-[100px] bg-transparent font-light w-full pl-3 text-black placeholder:text-black tracking-widest"
-                name="message"
-                placeholder='Typ hier uw bericht ...'
-                required
-              />
-              <button
-                type="submit" className='py-2 px-4  h-[35px] w-[120px] bg-[#f1f1f1] mx-auto my-5 flex justify-center items-center hover:bg-white text-gray-800 font-semibold border border-gray-600 rounded-xl shadow focus:outline focus:ring-2 focus:ring-black'>
-                Verzend
-              </button>
-            </form>
-          </div>
-        </div>
+  {/* Verzendformulier section */}
+  <div className="order-first lg:order-last flex flex-col lg:w-2/3 pb-10 lg:pb-5 rounded-xl shadow-lg bg-secondary p-5 py-10">
+    <h1 className="text-[35px] lg:text-[40px] pb-20 lg:pb-10 uppercase font-bold tracking-widest text-center">
+      Contact <br />formulier
+    </h1>
+    <form action="https://getform.io/f/19890081-7383-4319-832f-c7a6294b1408" method="POST" className="flex flex-col lg:flex-row gap-y-4 p-4">
+      
+      {/* Left side inputs */}
+      <div className="flex flex-col lg:w-1/2 gap-y-4">
+        <input className="outline-none border-b border-b-brown h-[60px] bg-transparent font-light w-full pl-3 placeholder:text-black text-black tracking-widest" type="text" name="name" placeholder="Naam" required />
+        <input className="outline-none border-b border-b-brown h-[60px] bg-transparent font-light w-full pl-3 placeholder:text-black text-black tracking-widest" type="email" name="email" placeholder="E-mailadres" required />
+        <input className="outline-none border-b border-b-brown h-[60px] bg-transparent font-light w-full pl-3 placeholder:text-black text-black tracking-widest" type="text" name="subject" placeholder="Onderwerp" required />
       </div>
-    </section>
+
+      {/* Right side textarea */}
+      <div className="lg:w-1/2 flex flex-col">
+      <textarea
+        className="min-h-[136px] outline-none border-b border-b-brown bg-transparent font-light w-full pl-3 text-black placeholder:text-black tracking-widest lg:pb-[0px]"
+        name="message"
+        placeholder="Typ hier uw bericht ..."
+        required
+      />
+        <button type="submit" className="py-2 px-4 h-[35px] w-[120px] bg-[#f1f1f1] mx-auto mt-5 flex justify-center items-center hover:bg-white text-gray-800 font-semibold border border-gray-600 rounded-xl shadow focus:outline focus:ring-2 focus:ring-black">
+          Verzend
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+</section>
+
 
     {/* VOLGENDE PAGINA */}
     <section className="w-screen">
