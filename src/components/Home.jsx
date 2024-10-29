@@ -4,23 +4,22 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <section id="toppage" className="w-full">
-      {/* Hero section */}
-      <section className="relative w-full h-[85vh] bg-removecouple bg-cover bg-center flex justify-center items-center">
-        <div className="absolute bottom-10 left-5 text-white p-5">
-          <h1 className="text-[60px] lg:text-[120px] font-bold uppercase leading-none">
-            Vind je <br />
-            <span className="text-secondary">eigen</span><br />
-            <span className="text-[90px] lg:text-[150px]">kracht</span>
-          </h1>
-        </div>
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
-        <div
-          className="w-full h-full bg-removecouple bg-cover bg-center"
-          role="img"
-          aria-label="Therapist couple in background image"
-        ></div>
-      </section>
+<section id="toppage" className="w-full">
+   <section
+    className="relative w-full h-[85vh] bg-removecouple bg-cover bg-center flex justify-center items-center"
+    style={{ backgroundPosition: '50% 30%' }}
+    aria-label="Therapist couple in background image"
+    >
+  <div className="absolute bottom-10 left-5 text-white p-5">
+    <h1 className="text-[60px] lg:text-[120px] font-bold uppercase leading-none">
+      Vind je <br />
+      <span className="text-secondary">eigen</span><br />
+      <span className="text-[90px] lg:text-[150px]">kracht</span>
+    </h1>
+  </div>
+  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30" aria-hidden="true"></div>
+</section>
+
 
       {/* Section 1 */}
       <section className="w-full py-20">
@@ -34,7 +33,7 @@ const Home = () => {
       </section>
 
       {/* Image Section */}
-      <div className="bg-emotiegevoel h-[80vh] w-full bg-cover bg-center" aria-label="Emotion feeling related image"></div>
+<div className="bg-emotiegevoel h-[80vh] w-full bg-cover bg-center" role="img" aria-label="Emotion feeling related background image"></div>
 
       {/* Section 2: Experience Statement */}
       <section className="w-full py-20">
@@ -45,8 +44,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Image Section */}
-      <div className="bg-boksen h-[80vh] w-full bg-cover bg-center" aria-label="Boxing related background image"></div>
+      {/* Section 2 Image Section */}
+<div className="bg-boksen h-[80vh] w-full bg-cover bg-center" role="img" aria-label="Boxing related background image"></div>
 
       {/* Section 3 */}
       <section className="flex justify-center w-full py-10 bg-gray-50">
@@ -63,8 +62,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Image Section */}
-      <div className="bg-evaluatie h-[80vh] w-full bg-cover bg-center" aria-label="Evaluation related image background"></div>
+      {/* Evaluation Image Section */}
+<div className="bg-evaluatie h-[80vh] w-full bg-cover bg-center" role="img" aria-label="Evaluation related background image"></div>
 
       {/* Next Page Link */}
       <section className="w-full">

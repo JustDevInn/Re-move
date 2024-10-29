@@ -13,7 +13,7 @@ const Werkwijze = () => {
           {/* Section 1 */}
           <div className="flex flex-col lg:flex-row lg:h-[50vh] w-full lg:justify-between rounded-xl shadow-xl bg-secondary">
             <div className="overflow-hidden w-full lg:w-1/2 h-[50vh] lg:h-auto">
-              <div className="bg-kennismaken bg-center bg-cover bg-no-repeat w-full h-full hover:scale-110 transition-all duration-500"></div>
+              <div className="bg-kennismaken bg-center bg-cover bg-no-repeat w-full h-full hover:scale-110 transition-all duration-500" role="img" aria-label="visualisatie van kennismaking"></div>
             </div>
             <div className="p-5 lg:p-10 flex justify-center items-center lg:w-1/2">
               <div className="tracking-widest">
@@ -26,7 +26,7 @@ const Werkwijze = () => {
           {/* Section 2 */}
           <div className="flex flex-col lg:flex-row-reverse lg:h-[50vh] w-full lg:justify-between rounded-xl shadow-xl">
             <div className="overflow-hidden w-full lg:w-1/2 h-[50vh] lg:h-auto">
-              <div className="bg-boksen bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105"></div>
+              <div className="bg-boksen bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105" role="img" aria-label="visualisatie van boksen"></div>
             </div>
             <div className="p-5 lg:p-10 flex justify-center items-center lg:w-1/2">
               <div className="tracking-widest">
@@ -39,7 +39,7 @@ const Werkwijze = () => {
           {/* Section 3 */}
           <div className="flex flex-col lg:flex-row lg:h-[50vh] w-full lg:justify-between rounded-xl shadow-xl bg-secondary">
             <div className="overflow-hidden w-full lg:w-1/2 h-[50vh] lg:h-auto">
-              <div className="bg-emotiegevoel bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105"></div>
+              <div className="bg-emotiegevoel bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105" role="img" aria-label="visualisatie van gevoelens"></div>
             </div>
             <div className="p-5 lg:p-10 flex justify-center items-center lg:w-1/2">
               <div className="tracking-widest">
@@ -52,7 +52,7 @@ const Werkwijze = () => {
           {/* Section 4 */}
           <div className="flex flex-col lg:flex-row-reverse lg:h-[50vh] w-full lg:justify-between rounded-xl shadow-xl">
             <div className="overflow-hidden w-full lg:w-1/2 h-[50vh] lg:h-auto">
-              <div className="bg-grenzenherkennen bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105"></div>
+              <div className="bg-grenzenherkennen bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105" role="img" aria-label="visualisatie van grenzen herkennen"></div>
             </div>
             <div className="p-5 lg:p-10 flex justify-center items-center lg:w-1/2">
               <div className="tracking-widest">
@@ -65,7 +65,7 @@ const Werkwijze = () => {
           {/* Section 5 */}
           <div className="flex flex-col lg:flex-row lg:h-[50vh] w-full lg:justify-between rounded-xl shadow-xl bg-secondary">
             <div className="overflow-hidden w-full lg:w-1/2 h-[50vh] lg:h-auto">
-              <div className="bg-gedrag bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105"></div>
+              <div className="bg-gedrag bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105" role="img" aria-label="visualisatie van gedrag"></div>
             </div>
             <div className="p-5 lg:p-10 flex justify-center items-center lg:w-1/2">
               <div className="tracking-widest">
@@ -78,7 +78,7 @@ const Werkwijze = () => {
           {/* Section 6 */}
           <div className="flex flex-col lg:flex-row-reverse lg:h-[50vh] w-full lg:justify-between rounded-xl shadow-xl">
             <div className="overflow-hidden w-full lg:w-1/2 h-[50vh] lg:h-auto">
-              <div className="bg-evaluatie bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105"></div>
+              <div className="bg-evaluatie bg-center bg-cover bg-no-repeat w-full h-full transition-transform duration-300 hover:scale-105" role="img" aria-label="visualisatie van evaluatie"></div>
             </div>
             <div className="p-5 lg:p-10 flex justify-center items-center lg:w-1/2">
               <div className="tracking-widest">
