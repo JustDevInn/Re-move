@@ -2,27 +2,35 @@ import React, { useState } from 'react';
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhone, FaInstagram } from 'react-icons/fa';
 import { TiClipboard } from "react-icons/ti";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footers = () => {
   const [copied, setCopied] = useState(false);
   const phoneNumber = '0615138681';
+  const navigate = useNavigate();
 
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(phoneNumber);
     setCopied(true);
-    setTimeout(() => setCopied(false), 1500); // Shortened timeout to 1.5s
+    setTimeout(() => setCopied(false), 1500);
   };
 
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+
   return (
-    <footer className="w-full bg-primaryDark p-10 h-[50vh] relative">
+    <footer className="w-full bg-primaryDark p-5 h-[50vh] md:h-[65vh] relative">
       {/* Centered Content */}
       <div className="w-full flex flex-col justify-center items-center font-primary font-medium h-full space-y-4">
         
-        {/* Logo */}
-        <div 
-          className="md:w-[500px] md:h-[200px] w-[250px] h-[150px] bg-removeLangweb bg-center bg-cover bg-no-repeat" 
-          aria-label="Re-Move Coaching Logo"
+         {/* Clickable Logo */}
+         <div 
+          onClick={handleLogoClick} 
+          className="md:w-[500px] md:h-[200px] w-[250px] h-[150px] bg-removeLangweb bg-center bg-cover bg-no-repeat cursor-pointer" 
+          aria-label="Homepage"
           role="img"
         />
 
@@ -65,18 +73,19 @@ const Footers = () => {
           </a>
         </div>
 
-        {/* KVK Information */}
-        <div className="w-full text-xs flex justify-evenly items-center pt-10 pb-10 mt-10">
-          <p><span className="text-secondary mr-2">KVK</span> 87730278</p>
-          <p><span className="text-secondary mr-2">SKJ</span> 100016128</p>
-          <Link 
-            to="/voorwaarden#toppage" 
-            className="focus:outline focus:ring-2 focus:ring-black underline"
-            aria-label="View Terms and Conditions"
-          >
-            Algemene voorwaarden
-          </Link>
-        </div>
+      {/* KVK Information */}
+<div className="w-full text-xs flex flex-wrap justify-evenly items-center gap-2 py-10 mt-10">
+  <p className="flex-shrink-0"><span className="text-secondary mr-2">KVK</span> 87730278</p>
+  <p className="flex-shrink-0"><span className="text-secondary mr-2">SKJ</span> 100016128</p>
+  <Link 
+    to="/voorwaarden#toppage" 
+    className="focus:outline focus:ring-2 focus:ring-black underline flex-shrink-0"
+    aria-label="View Terms and Conditions"
+  >
+    Algemene voorwaarden
+  </Link>
+</div>
+
       </div>
     </footer>
   );

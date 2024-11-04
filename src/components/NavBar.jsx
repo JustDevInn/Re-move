@@ -1,19 +1,24 @@
 import React from 'react';
-// import components
 import MobileNav from './MobileNav';
-// import link
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function NavBar() {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className='bg-primaryDark sticky top-0 w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[100px] flex items-center'>
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo for desktop and mobile */}
-        <Link 
-          to="/" 
-          className="w-[200px] h-[80px] bg-removeLangweb bg-contain bg-no-repeat" 
+        <div 
+          onClick={handleLogoClick} 
+          className="w-[200px] h-[80px] bg-removeLangweb bg-contain bg-no-repeat cursor-pointer" 
           aria-label="Homepage"
-        ></Link>
+        ></div>
 
         {/* Desktop nav */}
         <nav className='hidden lg:flex gap-12 font-regular uppercase'>

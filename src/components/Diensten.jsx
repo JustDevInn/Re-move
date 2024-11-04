@@ -28,7 +28,7 @@ const Diensten = () => {
           <div className="flex flex-col lg:flex-row justify-evenly p-5 rounded-xl shadow-lg bg-secondary hover:scale-105 duration-300">
             {/* left side */}
             <div className="flex flex-col text-center p-2 justify-center items-center w-full">
-              <h1 className="uppercase font-bold text-3xl p-2">coachingssessies <br />individueel</h1>
+              <h1 className="uppercase font-bold text-3xl p-2">coachings- sessies <br />individueel</h1>
               <h5 className="uppercase text-sm">(Frequentie en duur is maatwerk)</h5>
               <p className="font-thin text-xs py-2 text-start w-4/5">
                 - Duur sessie 1 uur <br />
@@ -58,7 +58,7 @@ const Diensten = () => {
                 - Duur / groepsgrootte in overleg <br />
                 - Ook beschikbaar voor volwassenen <br />
                 - Interessant voor teambuilding <br />
-                - Interessant voor mensen die werken met kinderen/volwassenen
+                - Interessant voor mensen die werken met kinderen/ volwassenen
               </p>
             </div>
             {/* right side */}
@@ -76,7 +76,7 @@ const Diensten = () => {
           <div className="flex flex-col lg:flex-row justify-evenly p-5 rounded-xl shadow-lg bg-secondary hover:scale-105 duration-300">
             {/* left side */}
             <div className="flex flex-col text-center p-2 justify-center items-center w-full">
-              <h1 className="uppercase font-bold text-3xl p-2">Ouder-kind <br />interactie</h1>
+              <h1 className="uppercase font-bold text-3xl p-2">Ouder- kind <br />interactie</h1>
               <p className="font-thin text-xs py-2 text-start w-4/5">
                 - Frequentie en duur is maatwerk <br />
                 - Zowel ouder-kind als gezinsmogelijkheden <br />
