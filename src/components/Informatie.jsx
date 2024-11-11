@@ -6,7 +6,7 @@ const Informatie = () => {
   return (
     <section id="toppage">
       {/* Hero section */}
-      <section className="relative w-screen h-[85vh] bg-informatie bg-cover bg-center flex justify-center items-center">
+      <section className="relative w-screen h-[85vh] bg-voorwaarden4 bg-cover bg-center flex justify-center items-center">
         <div className="absolute bottom-10 left-5 text-white p-5 max-w-[90%]">
           <h1 className="text-[8vw] md:text-[50px] lg:text-[120px] font-bold uppercase leading-none">
             Informatie

@@ -29,6 +29,13 @@ backgroundImage: {
   'gedrag': "url('/public/img/gedrag.JPG')",
   'evaluatie': "url('/public/img/evaluatie.JPG')",
   'voorwaarden': "url('/public/img/voorwaarden.JPG')",
+  'voorwaarden2': "url('/public/img/voorwaarden2.JPG')",
+  'voorwaarden4': "url('/public/img/voorwaarden4.JPG')",
+  'boksenouder': "url('/public/img/boksen-ouder.JPG')",
+  'boksenouder2': "url('/public/img/boksenouder2.JPG')",
+  'boksenouder3': "url('/public/img/boksenouder3.JPG')",
+  'beschermtool': "url('/public/img/beschermtool.JPG')",
+  'beschermtool2': "url('/public/img/beschermtool2.JPG')",
 },
 
       ringColor: {

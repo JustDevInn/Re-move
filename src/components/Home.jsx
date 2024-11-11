@@ -64,7 +64,7 @@ const Home = () => {
       </section>
 
       {/* Evaluation Image Section */}
-      <div className="bg-evaluatie h-[60vh] md:h-[80vh] w-full bg-cover bg-center" role="img" aria-label="Evaluation related background image"></div>
+      <div className="bg-beschermtool h-[60vh] md:h-[80vh] w-full bg-cover bg-center" role="img" aria-label="Evaluation related background image"></div>
 
       {/* Next Page Link */}
       <section className="w-full">
