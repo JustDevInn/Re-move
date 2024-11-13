@@ -45,7 +45,7 @@ const Footers = () => {
             <HiOutlineMail size={20} />
           </a>
 
-          {/* PHONE */}
+          {/* PHONE
           <div className="relative" role="button" aria-label="Copy phone number to clipboard">
             {copied && (
               <p className="text-green-500 text-xs flex items-center transition-opacity duration-300 tracking-wider absolute top-0 -mt-10">
@@ -59,7 +59,7 @@ const Footers = () => {
               aria-label="Copy phone number to clipboard"
               tabIndex={0}
             />
-          </div>
+          </div> */}
 
           {/* INSTAGRAM */}
           <a

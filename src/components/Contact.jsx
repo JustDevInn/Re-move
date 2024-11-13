@@ -37,8 +37,8 @@ const Contact = () => {
           {/* Visite kaartje section */}
           <div className="lg:w-1/3 flex justify-center items-center order-last lg:order-first tracking-wider pt-10 lg:pt-0 hover:scale-105 duration-300">
             <p className="p-5 rounded-xl shadow-lg">
-              Evi@schutzorgondersteuning <br />
-              06 15 13 86 81 <br /><br />
+              Evi@schutzorgondersteuning
+              <br /><br />
               <span className="font-bold">KVK</span> 87730278 <br />
               <span className="font-bold">SKJ</span> 100016128
             </p>
