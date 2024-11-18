@@ -43,23 +43,26 @@ const MobileNav = () => {
           className='text-4xl absolute z-30 left-4 top-14 text-black cursor-pointer'>
           <IoMdClose />
         </div>
-        <ul className='h-full flex flex-col justify-center items-center gap-y-8 text-black font-thin uppercase tracking-widest text-3xl'>
-          <li>
-            <Link onClick={handleCloseMenu} to='/#toppage'>Home</Link>
-          </li>
-          <li>
-            <Link onClick={handleCloseMenu} to='/werkwijze/#toppage'>Werkwijze</Link>
-          </li>
-          <li>
-            <Link onClick={handleCloseMenu} to='/informatie/#toppage'>Informatie</Link>
-          </li>
-          <li>
-            <Link onClick={handleCloseMenu} to='/diensten/#toppage'>Diensten</Link>
-          </li>
-          <li>
-            <Link onClick={handleCloseMenu} to='/contact/#toppage'>Contact</Link>
-          </li>
-        </ul>
+        {/* Wrapper div for the navbar items */}
+        <div className="h-full flex justify-center items-center">
+          <ul className='flex flex-col items-start gap-y-8 text-black font-thin uppercase tracking-widest text-3xl'>
+            <li>
+              <Link onClick={handleCloseMenu} to='/#toppage'>Home</Link>
+            </li>
+            <li>
+              <Link onClick={handleCloseMenu} to='/werkwijze/#toppage'>Werkwijze</Link>
+            </li>
+            <li>
+              <Link onClick={handleCloseMenu} to='/informatie/#toppage'>Informatie</Link>
+            </li>
+            <li>
+              <Link onClick={handleCloseMenu} to='/diensten/#toppage'>Diensten</Link>
+            </li>
+            <li>
+              <Link onClick={handleCloseMenu} to='/contact/#toppage'>Contact</Link>
+            </li>
+          </ul>
+        </div>
       </motion.div>
     </nav>
   );

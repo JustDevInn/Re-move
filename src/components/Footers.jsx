@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import { HiOutlineMail } from "react-icons/hi";
-import { FaPhone, FaInstagram } from 'react-icons/fa';
-import { TiClipboard } from "react-icons/ti";
+import {FaInstagram } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Footers = () => {
-  const [copied, setCopied] = useState(false);
-  const phoneNumber = '0615138681';
+  // const [copied, setCopied] = useState(false);
+  // const phoneNumber = '0615138681';
   const navigate = useNavigate();
 
-  const handleCopyToClipboard = () => {
-    navigator.clipboard.writeText(phoneNumber);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  };
+  // const handleCopyToClipboard = () => {
+  //   navigator.clipboard.writeText(phoneNumber);
+  //   setCopied(true);
+  //   setTimeout(() => setCopied(false), 1500);
+  // };
 
   const handleLogoClick = () => {
     navigate('/');
