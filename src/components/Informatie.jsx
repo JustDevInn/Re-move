@@ -61,8 +61,7 @@ const Informatie = () => {
               Het programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op 
               zoek zijn naar persoonlijke groei en ontwikkeling.
               <br /><br />
-              Dit programma helpt kinderen en jongeren van 8 tot 21 jaar die hun sociaal-emotionele vaardigheden willen verbeteren en op 
-              zoek zijn naar persoonlijke groei en ontwikkeling. We combineren de fysieke voordelen van boksen met de kracht van 
+              We combineren de fysieke voordelen van boksen met de kracht van 
               emotionele begeleiding voor een holistische ontwikkelingservaring.
               <br /><br />
               Onze doelgroep omvat kinderen en jongvolwassenen van 8 t/m 21 jaar die geïnteresseerd zijn in het verbeteren van hun sociaal-
